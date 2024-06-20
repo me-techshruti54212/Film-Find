@@ -7,11 +7,12 @@ import About from './About';
 function App() {
   return (
    
-    <BrowserRouter>
-    <Navbar/>
+    <BrowserRouter basename="/Film-Find">
+    
       <Routes>
-      <Route path="/contact" exact element={<Contact />} />
-      <Route path="/about" exact element={<About />} />
+      <Route  path="/Film-Find"  element={<Navbar />} />
+      <Route  path="/contact"  element={<Contact />} />
+      <Route  path="/about"  element={<About />} />
       </Routes>
     </BrowserRouter>
   );
